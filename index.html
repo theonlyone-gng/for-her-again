@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Piya Cherni ♡</title>
+
+<style>
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+ margin:0;background:#080308;color:#ffe4eb;
+ font-family:Georgia,serif;
+}
+button{font-family:inherit;cursor:pointer}
+#intro{
+ min-height:100vh;min-height:100svh;
+ display:flex;align-items:center;justify-content:center;
+ text-align:center;padding:24px;overflow:hidden;
+ background:radial-gradient(ellipse at center,#4b071b 0%,#17030b 48%,#060206 100%);
+}
+.intro-inner{width:100%;max-width:440px}
+.brand{color:#ff91ae;letter-spacing:4px;font-size:13px}
+.bunny{
+ font-size:100px;margin:24px 0 10px;
+ animation:bounce 1.8s ease-in-out infinite;
+ filter:drop-shadow(0 0 20px #ff416b);
+}
+.hint{color:#ffc0d0;line-height:1.9;font-size:15px}
+.arrow{font-size:27px;animation:bounce 1s infinite}
+h1,h2{color:#ff91ae;font-weight:normal;font-style:italic}
+.intro-title{font-size:40px;line-height:1.25;margin:15px 0 25px}
+.open-btn{
+ width:100%;max-width:300px;padding:17px;
+ color:white;background:linear-gradient(100deg,#810b31,#e32255);
+ border:1px solid #ff9bb7;border-radius:40px;
+ letter-spacing:2px;font-size:15px;
+ box-shadow:0 0 28px #ff174466;
+ transition:transform .3s;
+}
+.open-btn:hover{transform:scale(1.05)}
+.tiny{color:#dba4b4;font-size:12px;letter-spacing:1px;margin-top:25px}
+#love{display:none;animation:fadeIn 1.2s ease}
+header,footer{text-align:center;padding:28px 14px;color:#ff91ae}
+.hero,.section{padding:55px 7%;text-align:center}
+.hero{background:radial-gradient(ellipse at top,#40081b,#080308 75%)}
+.eyebrow{font-size:12px;letter-spacing:3px;color:#ffb0c3}
+.hero h1{font-size:clamp(45px,10vw,75px);margin:20px 0}
+p{line-height:1.95}
+.lead{max-width:650px;margin:20px auto;color:#f6d1dc}
+.photo{
+ max-width:410px;margin:35px auto 25px;padding:10px 10px 25px;
+ background:#f0ded6;color:#35101d;transform:rotate(-2deg);
+ box-shadow:0 10px 45px #0009;
+}
+.photo img{display:block;width:100%;height:auto}
+.caption{padding-top:15px;font-style:italic;font-size:20px}
+.section{border-top:1px solid #ff668322}
+.section h2{font-size:clamp(38px,8vw,55px)}
+.story,.letter,.memory{
+ max-width:650px;margin:22px auto;padding:25px;
+ border:1px solid #ff527344;border-radius:16px;
+ background:linear-gradient(145deg,#1b0710,#0b0509);
+ box-shadow:0 0 35px #ff17440c;
+}
+.story p,.letter p{color:#f5d6df}
+.memory h3{font-weight:normal;font-style:italic;color:#ff9bb5}
+.letter{text-align:left;padding:30px}
+.signature{text-align:center;color:#ff91ae;font-size:25px;font-style:italic}
+.bunny-bottom{font-size:65px;animation:bounce 2s infinite}
+footer{border-top:1px solid #ff668322;line-height:2;letter-spacing:2px}
+.heart{
+ position:fixed;bottom:-30px;z-index:10;pointer-events:none;
+ animation:floatUp 4s linear forwards;
+}
+@keyframes bounce{
+ 0%,100%{transform:translateY(0) rotate(-3deg)}
+ 50%{transform:translateY(-12px) rotate(3deg)}
+}
+@keyframes fadeIn{
+ from{opacity:0;transform:translateY(18px)}
+ to{opacity:1;transform:translateY(0)}
+}
+@keyframes floatUp{
+ to{transform:translateY(-110vh) rotate(30deg);opacity:0}
+}
+@media(max-width:450px){
+ .hero,.section{padding:42px 6%}
+ .story,.memory,.letter{padding:20px}
+}
+</style>
+</head>
+
+<body>
+
+<!-- OPENING SCREEN: USAGI AND ONE BUTTON -->
+
+<section id="intro">
+ <div class="intro-inner">
+  <div class="brand">♡ YOU & ME ♡</div>
+
+  <div class="bunny">🐰💗</div>
+
+  <div class="hint">
+   Psst, my love... Usagi has a surprise for you!
+   <div class="arrow">↘ 💌</div>
+  </div>
+
+  <h1 class="intro-title">A Little World<br>Made Just For You</h1>
+
+  <button class="open-btn" onclick="openHeart()">
+   OPEN MY HEART ♡
+  </button>
+
+  <p class="tiny">15 · 04 · 2025 — OUR FOREVER ♡</p>
+ </div>
+</section>
+
+<!-- HIDDEN UNTIL SHE CLICKS -->
+
+<main id="love">
+
+ <header>♡ MY PIYA CHERNI ♡</header>
+
+ <section class="hero">
+  <div class="eyebrow">15 APRIL 2025 · THE BEGINNING OF US</div>
+
+  <h1>My Piya Cherni</h1>
+
+  <p class="lead">
+   Out of all the people in this world, somehow my heart
+   found you. And if I had a thousand lifetimes, I would
+   want to find you in every single one.
+   You are my favorite chapter, my sweetest thought,
+   and the person I want beside me through every tomorrow.
+   I love you more than these little words could ever say. ♡
+  </p>
+
+  <div class="photo">
+   <!-- Upload your couple photo and name it our-photo.jpeg -->
+   <img src="our-photo.jpeg" alt="Our favorite memory"
+    onerror="this.style.display='none';this.nextElementSibling.innerHTML='♡ Add our-photo.jpeg beside this HTML file ♡'">
+   <div class="caption">My forever person ♡</div>
+  </div>
+
+  <p class="tiny">TWO HEARTS · ONE LITTLE WORLD · FOREVER</p>
+ </section>
+
+ <section class="section">
+  <h2>Our Story ♡</h2>
+
+  <div class="story">
+   <h3>The Day It All Began</h3>
+   <p>
+    15 April 2025 — a date that will always mean something
+    beautiful to me. It marks a chapter in our story that
+    I never want to stop writing. If I could revisit one
+    beginning again and again, I would always choose ours.
+   </p>
+  </div>
+
+  <div class="memory">
+   <h3>My Favorite Person ♡</h3>
+   It's the little things about you that make everything
+   special: your smile, your laugh, your messages, and the
+   way even an ordinary day can become a beautiful memory
+   just because you're part of it.
+  </div>
+
+  <div class="memory">
+   <h3>My Safe Place 💗</h3>
+   I hope I can always be someone who listens to you,
+   celebrates your happiness, comforts you on difficult
+   days, and reminds you that you deserve gentleness,
+   respect, and a love that keeps growing.
+  </div>
+
+  <div class="memory">
+   <h3>All Our Tomorrows ∞</h3>
+   There are so many memories we haven't made yet,
+   so many laughs waiting for us, and so many little
+   moments I can't wait to share with you.
+   My favorite part of the future is that it has new
+   pages for our story.
+  </div>
+ </section>
+
+ <section class="section">
+  <h2>A Letter For You 💌</h2>
+
+  <div class="letter">
+   <p>My Piya Cherni, my sweetest girl,</p>
+
+   <p>
+    If I could give you one thing, I would give you the
+    chance to see yourself through my eyes, even for a
+    moment. Maybe then you would understand how special
+    you are to me and how much happiness your presence
+    brings into my life.
+   </p>
+
+   <p>
+    You're the person I want to tell all my little stories
+    to, the one I want to share my good news with, and
+    the one I want to comfort whenever the world feels
+    a little too heavy. I want to keep learning about you,
+    growing beside you, and making memories that we'll
+    smile about years from now.
+   </p>
+
+   <p>
+    I don't promise that every day will be perfect.
+    I promise that your feelings matter to me, that I'll
+    keep trying to understand you, and that I'll never
+    stop appreciating the beautiful person you are.
+   </p>
+
+   <p>
+    Thank you for being part of my life, for every laugh,
+    every sweet moment, and every memory that became
+    precious simply because it was ours.
+   </p>
+
+   <p>
+    Happy anniversary, my love. If our story were a book,
+    I would never want to reach the last page. I'd rather
+    keep turning pages with you, one little adventure
+    at a time.
+   </p>
+
+   <p>With all my heart, always and always. ♡</p>
+
+   <div class="signature">Your boy, forever yours ♡</div>
+  </div>
+ </section>
+
+ <section class="section">
+  <div class="bunny-bottom">🐰💕</div>
+  <h2>To My Piya Cherni</h2>
+  <p class="lead">
+   Thank you for being a part of my story.
+   Here's to every memory we've made and every
+   beautiful chapter still waiting for us.
+  </p>
+ </section>
+
+ <footer>
+  PIYA CHERNI ♡<br>
+  SAME SOUL · ONE STORY · A THOUSAND TOMORROWS<br>
+  <span style="font-size:22px">∞ ♡ ∞</span>
+ </footer>
+
+</main>
+
+<script>
+function openHeart(){
+ const intro=document.getElementById('intro');
+ const love=document.getElementById('love');
+
+ intro.style.display='none';
+ love.style.display='block';
+
+ window.scrollTo({top:0,behavior:'instant'});
+
+ // Floating hearts after the surprise opens
+ for(let i=0;i<22;i++){
+  setTimeout(()=>{
+   const heart=document.createElement('span');
+   heart.className='heart';
+   heart.textContent=['❤️','💗','💕','♡','💖'][
+    Math.floor(Math.random()*5)
+   ];
+   heart.style.left=Math.random()*95+'vw';
+   heart.style.fontSize=(16+Math.random()*20)+'px';
+   heart.style.animationDuration=(3+Math.random()*3)+'s';
+   document.body.appendChild(heart);
+   setTimeout(()=>heart.remove(),6500);
+  },i*180);
+ }
+}
+</script>
+
+</body>
+</html>
